@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/responsiveslides.min.js"></script>
+  <title></title>
+  <script>
+  $('document').ready(function(){
+    $( window ).resize(function() {
+        if($( window ).width() > 767){
+          $('nav ul').show();
+        }else{
+          $('nav ul').hide();
+        }
+    });
+
+    $('#mobile-nav').click(function(){
+      if($('nav ul').is(":visible")){
+        $('nav ul').hide();
+      }else{
+        $('nav ul').fadeIn();
+      }
+    });
+  });
+
+  </script>
+</head>
+<body>
+	<header>
+    <div id="header_top">
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 fu">
+          <i class="fa fa-map-marker"></i>  123 Bldg Name Main Street, City, State
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 fu">
+          <i class="fa fa-mobile"></i> 0481 844 111
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 fu">
+
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 fu alignright">
+            <ul class="socials">
+              <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></li>
+              <li><a href="#" target="_blank"><i class="fa fa-linkedin-square"></i></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="main" class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-2">
+        <a href="index.html" class="logo"><img src="images/logo.jpg"></a>
+      </div>
+      <div class="col-sm-12 col-md-10 alignright">
+        <nav>
+          <a href="javascript:;" id="mobile-nav">MENU <span><i class="fa fa-bars"></i></span></a>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT TPAM</a></li>
+            <li><a href="">TPI AUSTRALIAN SHARE FUND OVERVIEW</a></li>
+            <li><a href="">FUND PERFORMANCE</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <section id="content">
+    <div class="container">
+      <div class="row column">
+          <div class="col-md-12">
+            <h2>ABOUT TPI</h2>
+            <div class="text">Trumper Park Investments Pty Limited ACN 134 993 114 (TPI) is an Australian Registered Company that is responsible for operating the TPI fund, including management, administration and compliance. The Investment Committee all have a substantial amount of their own net worth invested in the TPI fund and are aligned to our investors.</div>
+            <h2>The TPI Fund Objective</h2>
+            <div class="text">The TPI Fund is a private investment vehicle and is not open to the general public. The objective of the TPI Fund is to outperform the S&P/ASX Small Ordinaries Accumulation Index over rolling 5 year periods.</div>
+            <h2>The TPI Fund Investment Strategy</h2>
+            <div class="text">As stated the objective of the fund is to outperform the S&P/ASX Small Ordinaries Accumulation Index over rolling 5 year periods via an actively managed ASX-listed equity portfolio constructed of a concentrated mix of smaller companies exhibiting value and growth characteristics. We seek to achieve superior risk-adjusted returns by implementing a private owner investment philosophy with a longer-than-average time horizon.<br/>
+              While we strive to maximize return, we believe that the primary and overriding investment criterion should be safety of principal with a focus on minimizing the odds of a permanent loss of capital. We believe the entry price of any investment is the single largest determinant of expected return and the risk assumed to generate the return. As such, we focus our attention on businesses whose publicly traded stocks are selling at a significant discount to our conservative estimate of their underlying private market value.
+              We believe applying a multi-year time horizon to our investment process allows us to purchase partial ownership in above average and great businesses that have become temporarily out of favor for a reason that is short-term in nature, but that would be deemed far less important if investors owned the business in its entirety. As such, we do not regard ourselves as traders of stocks, but rather as part owners of tangible businesses.</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>NAVIGATION</h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 dt">
+          <h3>CONTACT DETAILS</h3>
+          <ul>
+            <li><i class="fa fa-map-marker icon"></i> <span>123 Bldg Name Main Street<br/>
+            City, State 3000</span>
+            </li>
+            <li><i class="fa fa-mobile icon"></i> <span>0481 844 111</span></li>
+            <li><i class="fa fa-envelope icon"></i> <span>name@email.com.au</span></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>FOLLOW US</h3>
+          <ul>
+            <li><i class="fa fa-facebook-square"></i> Facebook</li>
+            <li><i class="fa fa-linkedin-square"></i> Linkedin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <ul id="copyright">
+    <li>&copy; Copyright 2016</li>
+    <li>|</li>
+    <li>All Rights Reserved</li>
+    <li>|</li>
+    <li>Prowered by <a href="#">CrazyDomains</a></li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* ----------------
+Coded by: breyjhan
+------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+@import "bootstrap";
+img{width:100%}
+.aligncenter{text-align: center;}
+.alignright{text-align: right;}
+h1, .h1, h2, .h2, h3, .h3{margin-top: 0;font-family: $oxygen}
+h2{text-transform: uppercase;}
+ul,ol{padding-left: 0;list-style: none}
+.btn{margin: 10px 0;border-radius: 25px;padding: 10px 15px;min-width: 160px;display: inline-block;}
+textarea{min-height: 120px;}
+.text{margin-bottom: 40px;}
+.text{font-size: 20px $gbook}
+body{font-family: $oxygen; font-size: 18px;}
+/* -----------*/
+/*     header   */
+#header_top{
+  background: #164371;
+  display: block;
+  width: 100%;
+  padding: 8px 0 4px;
+
+  .fu{
+    font-size: 16px;
+    color:#fff;
+    line-height: 24px;
+    padding-top: 8px;
+  }
+  img{width: auto;}
+  ul li{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+nav{
+  padding: 50px 0;
+
+  > a {
+    display: none;
+  }
+
+  ul li{
+    display: inline-block;
+
+    a{font-size: 18px;color:#454c44;padding:10px 15px;}
+    a:hover{color:#fff;text-decoration: none;background: #164371;}
+  }
+
+}
+
+header{
+  #main{
+    padding: 18px 0;
+  }
+  a.logo > img{
+    width:auto;
+  }
+}
+
+#banner{
+  ul{margin-bottom: 0;}
+}
+#content{
+  min-height: 450px;
+  padding: 40px 0;
+  background: #f1f1f1;
+
+  .column{
+    font-size: 14px;
+
+
+    h3{text-align: center;padding-top: 10px;color: #ceecfa;}
+  }
+}
+#featured{
+  background-color: #164371;
+  padding: 40px 0 60px;
+  background-image: url('../images/featurdbg.png');
+  background-position: center;
+  color:#fff;
+}
+
+footer{
+  background: #333333;
+  padding: 40px 0 10px;
+  color:#929292;
+
+  a,a:hover{color:#929292}
+  .icon{width: 40px;text-align: center;font-size: 24px;}
+  .dt ul li{font-size: 14px;
+    span{display: inline-block;vertical-align: middle;}
+    i{display: inline-block;vertical-align: middle;}
+  }
+  ul {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+
+#copyright{
+  background: #333333;
+  text-align: center;
+  padding: 20px 0 20px;
+  ul{
+    margin-bottom: 0;
+  }
+  li{display: inline-block; font-size: 14px;color: #929292;
+    a{color:#929292;}
+  }
+}
+
+.rslides{max-height: 658px}
+#banner{position: relative;}
+#banner .centered-btns_nav {
+    z-index: 3;
+    position: absolute;
+    -webkit-tap-highlight-color: transparent;
+    top: 65%;
+    left: 10px;
+    opacity: 0.7;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 40px;
+    width: 18px;
+    background: transparent url('../images/arrow-left.png') no-repeat left top;
+    margin-top: -45px;
+}
+
+#banner .centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 10px;
+  background: transparent url('../images/arrow-right.png') no-repeat left top;
+}
+.socials a{
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff
+}
+nav > a,nav > a:hover,nav > a:focus{
+  text-align: left;
+  background: #164371;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+nav > a > span{
+  float: right;
+}
+@media only screen and (max-width:1200px){
+  nav {
+      padding: 20px 0;
+  }
+  nav ul li {
+    line-height: 42px;
+  }
+}
+
+@media only screen and (max-width:1557px){
+  #banner .centered-btns_nav {
+      top: 60%;
+    }
+}
+@media only screen and (max-width:1360px){
+  #banner .centered-btns_nav {
+      top: 55%;
+    }
+}
+@media only screen and (max-width:1127px){
+  #banner .centered-btns_nav {
+      top: 50%;
+    }
+}
+@media only screen and (max-width:991px){
+  #banner .centered-btns_nav {
+      top: 60%;
+    }
+    a.logo{
+      text-align: center;
+      display: block;
+    }
+    nav{text-align: center;}
+}
+
+@media only screen and (max-width:767px){
+  #banner .centered-btns_nav {
+      top: 65%;
+    }
+  nav > a{display: block;;}
+  .fu{text-align: center;}
+  nav{padding:20px 0}
+  nav ul {
+    margin-top: 0;
+    display: none;
+  }
+  nav ul li{
+    display: block;
+    line-height: 14px;
+  }
+  nav ul li a {
+    display: block;
+    background: #f1f1f1;
+    border-bottom: 1px solid;
+  }
+  .text{margin: 0 10px 20px}
+  footer .row > div{ margin-bottom: 20px}
+  #main .row{margin-left: 0;margin-right: 0}
+}
+
+@media only screen and (max-width:560px){
+
+}
+
+
+
+@media only screen and (max-width:480px){
+
+}
+
+@media only screen and (max-width:357px){
+}
