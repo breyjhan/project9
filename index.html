@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/responsiveslides.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/responsiveslides.min.js"></script>
+  <title></title>
+  <script>
+  $('document').ready(function(){
+    $( window ).resize(function() {
+        if($( window ).width() > 767){
+          $('nav ul').show();
+        }else{
+          $('nav ul').hide();
+        }
+    });
+
+    $('#mobile-nav').click(function(){
+      if($('nav ul').is(":visible")){
+        $('nav ul').hide();
+      }else{
+        $('nav ul').fadeIn();
+      }
+    });
+  });
+
+  </script>
+</head>
+<body>
+	<header>
+    <div id="header_top">
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 fu">
+          <i class="fa fa-map-marker"></i>  123 Bldg Name Main Street, City, State
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 fu">
+          <i class="fa fa-mobile"></i> 0481 844 111
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 fu">
+
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 fu alignright">
+            <ul class="socials">
+              <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></li>
+              <li><a href="#" target="_blank"><i class="fa fa-linkedin-square"></i></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="main" class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-2">
+        <a href="index.html" class="logo"><img src="images/logo.jpg"></a>
+      </div>
+      <div class="col-sm-12 col-md-10 alignright">
+        <nav>
+          <a href="javascript:;" id="mobile-nav">MENU <span><i class="fa fa-bars"></i></span></a>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT TPAM</a></li>
+            <li><a href="">TPI AUSTRALIAN SHARE FUND OVERVIEW</a></li>
+            <li><a href="">FUND PERFORMANCE</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <section id="banner">
+          <ul class="rslides">
+            <li>
+               <img src="images/slider1.jpg"/>
+            </li>
+            <li>
+               <img src="images/slider1.jpg"/>
+            </li>
+          </ul>
+  </section>
+
+  <section id="content">
+    <div class="container">
+      <div class="row column">
+          <div class="col-xs-12 col-sm-8 col-md-8">
+            <h2>Welcome To TPAM</h2>
+            <div class="text">You work hard for your money and where you decide to invest it is an important decision.
+              We are here to build on your wealth and guide you every step of the way.</div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h2>LOCATE US</h2>
+            <img src="images/map.jpg" />
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured">
+    <div class="container">
+      <h2 class="aligncenter">Our Products</h2>
+      <div class="text aligncenter">view more products in our gallery</div>
+    <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <img src="images/first1.jpg" />
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <img src="images/first2.jpg" />
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <img src="images/first3.jpg" />
+          </div>
+      </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>NAVIGATION</h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 dt">
+          <h3>CONTACT DETAILS</h3>
+          <ul>
+            <li><i class="fa fa-map-marker icon"></i> <span>123 Bldg Name Main Street<br/>
+            City, State 3000</span>
+            </li>
+            <li><i class="fa fa-mobile icon"></i> <span>0481 844 111</span></li>
+            <li><i class="fa fa-envelope icon"></i> <span>name@email.com.au</span></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>FOLLOW US</h3>
+          <ul>
+            <li><i class="fa fa-facebook-square"></i> Facebook</li>
+            <li><i class="fa fa-linkedin-square"></i> Linkedin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <ul id="copyright">
+    <li>&copy; Copyright 2016</li>
+    <li>|</li>
+    <li>All Rights Reserved</li>
+    <li>|</li>
+    <li>Prowered by <a href="#">CrazyDomains</a></li>
+  </ul>
+
+  <script>
+    $(function() {
+      $(".rslides").responsiveSlides({nav: true,namespace: "centered-btns"});
+    });
+  </script>
+</body>
+</html>
